@@ -78,7 +78,7 @@
 
     .button {
         border-radius: 0.6em;
-        background: #1D87F1;
+        background: $highlight;
     }
 }
 
@@ -87,14 +87,12 @@
         background-color: rgba( $bg-dark, 1 );
     
         h1 {
-            font-weight: 100;
             color: rgba( $color-dark, 0.8 );
         }
     
         .input {
             background-color: rgba( $bg-dark, 1 );
             color: rgba( $color-dark, 0.8 );
-            border-radius: 0.6em;
             -moz-box-shadow:  
                                     5px 5px 10px #0c0d0e,
                                    -5px -5px 10px #30333a,
@@ -144,11 +142,6 @@
             &::-webkit-input-placeholder {
                 text-shadow: 1px 1px 1px #30333a, -1px -1px 1px #0c0d0e;
             }
-        }
-    
-        .button {
-            border-radius: 0.6em;
-            background: #1D87F1;
         }
     }
 }

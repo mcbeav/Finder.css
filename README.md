@@ -59,6 +59,12 @@ Compile the main.scss file using any sass compiler & name the output file custom
 - [ ] Change Side Bar From Menu Items To Specific Folders Like Finder
 - [ ] Rework / Restyle The Breadcrumb Links
 
+## Known Issues
+*A few issues I am aware of, and working on a fix. I believe these issues are occuring due to bugs with specific browser rendering bugs. Please send me an email, or open an issue if you find any bugs or issues with the stylesheet & I'll get them fixed.*
+
+- [ ] Search Placeholder Color In Dark Mode In Firefox Should Be White & Firefox Refuses To Render The Specified Style
+- [ ] Selection Styles Are Not Applying In Chrome Or Firefox
+
 ## Author
 - mcbeav - 422939+mcbeav@users.noreply.github.com
 

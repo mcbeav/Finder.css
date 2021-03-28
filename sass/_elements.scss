@@ -38,6 +38,10 @@
 }
 
 @media ( prefers-color-scheme:dark ) {
+    .message {
+        color: rgba( $color-dark, 0.9 );
+    }
+
     .action {
         color: rgba( $color-dark, 0.9 );
     }

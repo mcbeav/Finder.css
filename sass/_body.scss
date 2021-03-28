@@ -21,6 +21,17 @@ main {
     margin: 0 0 0 auto;
 }
 
+::placeholder {
+    color: rgba( $color-light, 0.6 );
+}
+
+::-moz-selection,
+::-webkit-selection,
+::selection {
+    background-color: rgba( $highlight, 0.9 );
+    color: rgba( $color-dark, 0.9 );
+}
+
 @media ( max-width: 736px ) {
     body {
         padding-bottom: 0;
@@ -32,8 +43,19 @@ main {
 }
 
 @media ( prefers-color-scheme:dark ) {
-    body {
+    html, body {
         background-color: $bg-dark;
         color: rgba( $color-dark, 0.9 );
+    }
+
+    ::placeholder {
+        color: rgba( $color-dark, 0.6 );
+    }
+
+    ::-moz-selection,
+    ::-webkit-selection,
+    ::selection {
+        background-color: rgba( $bg-light, 0.9 );
+        color: rgba( $color-light, 0.9 );
     }
 }

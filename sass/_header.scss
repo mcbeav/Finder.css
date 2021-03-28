@@ -97,16 +97,11 @@ header {
 
             #input {
                 background-color: rgba( $bg-dark, 0.6 );
-                color: rgba( $color-light, 0.9 );
+                color: rgba( $color-dark, 0.9 );
                 border: 1px solid rgba( $bg-light, 0.1 );
 
                 input {
 
-                    &::-moz-placeholder,
-                    &::-ms-placeholder,
-                    &:-ms-input-placeholder,
-                    &::-o-placeholder,
-                    &::-webkit-input-placeholder,
                     &::placeholder {
                         color: rgba( $color-dark, 0.6 );
                     }

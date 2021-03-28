@@ -27,6 +27,17 @@ main {
 	margin: 0 0 0 auto;
 }
 
+::placeholder {
+	color: rgba(11, 11, 11, 0.6);
+}
+
+::-moz-selection,
+::-webkit-selection,
+::selection {
+	background-color: rgba(29, 135, 241, 0.9);
+	color: rgba(255, 255, 255, 0.9);
+}
+
 @media (max-width: 736px) {
 	body {
 		padding-bottom: 0;
@@ -37,9 +48,18 @@ main {
 }
 
 @media (prefers-color-scheme: dark) {
-	body {
+	html, body {
 		background-color: #1D1E1F;
 		color: rgba(255, 255, 255, 0.9);
+	}
+	::placeholder {
+		color: rgba(255, 255, 255, 0.6);
+	}
+	::-moz-selection,
+	::-webkit-selection,
+	::selection {
+		background-color: rgba(255, 255, 255, 0.9);
+		color: rgba(11, 11, 11, 0.9);
 	}
 }
 
@@ -112,13 +132,11 @@ main {
 		background-color: #1d1e1f;
 	}
 	#login h1 {
-		font-weight: 100;
 		color: rgba(255, 255, 255, 0.8);
 	}
 	#login .input {
 		background-color: #1d1e1f;
 		color: rgba(255, 255, 255, 0.8);
-		border-radius: 0.6em;
 		-moz-box-shadow: 5px 5px 10px #0c0d0e, -5px -5px 10px #30333a, inset 2px 2px 2px #0c0d0e, inset -2px -2px 2px #30333a;
 		-ms-box-shadow: 5px 5px 10px #0c0d0e, -5px -5px 10px #30333a, inset 2px 2px 2px #0c0d0e, inset -2px -2px 2px #30333a;
 		-o-box-shadow: 5px 5px 10px #0c0d0e, -5px -5px 10px #30333a, inset 2px 2px 2px #0c0d0e, inset -2px -2px 2px #30333a;
@@ -142,10 +160,6 @@ main {
 	}
 	#login .input::-webkit-input-placeholder {
 		text-shadow: 1px 1px 1px #30333a, -1px -1px 1px #0c0d0e;
-	}
-	#login .button {
-		border-radius: 0.6em;
-		background: #1D87F1;
 	}
 }
 
@@ -238,10 +252,10 @@ header #search.active .boxes > div > div {
 	}
 	header #search #input {
 		background-color: rgba(29, 30, 31, 0.6);
-		color: rgba(11, 11, 11, 0.9);
+		color: rgba(255, 255, 255, 0.9);
 		border: 1px solid rgba(255, 255, 255, 0.1);
 	}
-	header #search #input input::-moz-placeholder, header #search #input input::-ms-placeholder, header #search #input input:-ms-input-placeholder, header #search #input input::-o-placeholder, header #search #input input::-webkit-input-placeholder, header #search #input input::placeholder {
+	header #search #input input::placeholder {
 		color: rgba(255, 255, 255, 0.6);
 	}
 	header #search.active #input {
@@ -583,6 +597,9 @@ main #listing.list .item.header {
 }
 
 @media (prefers-color-scheme: dark) {
+	.message {
+		color: rgba(255, 255, 255, 0.9);
+	}
 	.action {
 		color: rgba(255, 255, 255, 0.9);
 	}
