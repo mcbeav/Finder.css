@@ -26,7 +26,6 @@ Custom branding configuration can be set through the settings page while filebro
 - ### Compiling SASS
 Compile the main.scss file using any sass compiler & name the output file custom.css or use the custom.css file located in the css folder.
 ## Version
-- 1.1.0 - Fixed Styles For Mozilla Firefox
 - 1.0.0 - Initial Release
 
 ## Author
