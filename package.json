@@ -1,7 +1,7 @@
 {
-  "name": "file-browser",
+  "name": "finder.css",
   "version": "1.0.0",
-  "description": "Custom Branding, Icons & CSS, For The Files Container Running The file-browser Docker Image",
+  "description": "Custom Stylesheet For The Filebrowser Self-Hosted Service Aimed At Bringing A macOS Finder Like Experience With Dark Mode Support To The Service. Colors, Spacing, Sizes, etc. Have Been Changed, & Dark Mode Support Has Been Added.",
   "main": "main.scss",
   "scripts": {
     "clean": "rm ./css/custom.css",
@@ -9,10 +9,16 @@
     "watch": "node-sass -rw ./sass/main.scss ./css/custom.css"
   },
   "keywords": [
+    "css",
     "docker",
-    "css"
+    "files",
+    "filesystem",
+    "scss",
+    "self-hosted",
+    "stylesheet",
+    "styles"
   ],
-  "author": "hello@mcbeav.me",
+  "author": "422939+mcbeav@users.noreply.github.com",
   "license": "MIT",
   "dependencies": {
     "node-sass": "^5.0.0"
