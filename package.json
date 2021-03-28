@@ -5,7 +5,7 @@
   "main": "main.scss",
   "scripts": {
     "clean": "rm ./css/custom.css",
-    "build": "node-sass ./sass/main.scss ./css/custom.css",
+    "build": "node-sass ./sass/main.scss ./css/custom.css --output-style expanded --indent-type tab --indent-width 1",
     "watch": "node-sass -rw ./sass/main.scss ./css/custom.css"
   },
   "keywords": [
