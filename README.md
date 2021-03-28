@@ -25,8 +25,16 @@ Custom branding configuration can be set through the settings page while filebro
 
 - ### Compiling SASS
 Compile the main.scss file using any sass compiler & name the output file custom.css or use the custom.css file located in the css folder.
+
 ## Version
 - 1.0.0 - Initial Release
+
+## To Do
+*This will likely never be completed because I do not know how to modify the page being served without recompiling the File-Browser service. If I could modify the page being served without the extra steps, I would make these modifications*
+
+- [ ] Polyfill Backdrop Blur For Mozilla
+- [ ] Change Side Bar From Menu Items To Specific Folders Like Finder
+- [ ] Rework / Restyle The Breadcrumb Links
 
 ## Author
 - mcbeav - 422939+mcbeav@users.noreply.github.com
