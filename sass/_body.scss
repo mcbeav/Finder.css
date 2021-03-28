@@ -1,0 +1,39 @@
+html, body {
+    background-color: $bg-light;
+    color: rgba( $color-light, 0.9 );
+    font: normal normal 100 16px/1.168em "San Francisco", -apple-system, -system-ui, BlinkMacSystemFont;
+    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.0004 );
+    -ms-text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.0004 );
+    -o-text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.0004 );
+    -webkit-text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.0004 );
+    text-shadow: 1px 1px 1px rgba( 0, 0, 0, 0.0004 );
+    -ms-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+main {
+    margin: 0 0 0 auto;
+}
+
+@media ( max-width: 736px ) {
+    body {
+        padding-bottom: 0;
+    }
+
+    main {
+        width: 100%;
+    }
+}
+
+@media ( prefers-color-scheme:dark ) {
+    body {
+        background-color: $bg-dark;
+        color: rgba( $color-dark, 0.9 );
+    }
+}

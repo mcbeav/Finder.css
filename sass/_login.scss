@@ -1,0 +1,160 @@
+#login {
+    background: rgba( 245, 245, 245, 1 );
+
+    h1 {
+        font-weight: 100;
+    }
+
+    #wrong {
+        border-radius: 0.6em;
+        background: rgba( 255, 39, 54, 1 );
+        margin-bottom: 0.5em;
+        text-transform: capitalize;
+    }
+
+    .input {
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background: #F5F5F5;
+        border-radius: 0.6em;
+        border: none;
+        -moz-box-shadow:  
+                                5px 5px 10px #DDDDDD,
+                               -5px -5px 10px #FFFFFF,
+                      inset 2px 2px 2px #DDDDDD,
+                      inset -2px -2px 2px #FFFFFF;
+        -ms-box-shadow:  
+                                5px 5px 10px #DDDDDD,
+                               -5px -5px 10px #FFFFFF,
+                      inset 2px 2px 2px #DDDDDD,
+                      inset -2px -2px 2px #FFFFFF;
+        -o-box-shadow:  
+                                5px 5px 10px #DDDDDD,
+                               -5px -5px 10px #FFFFFF,
+                      inset 2px 2px 2px #DDDDDD,
+                      inset -2px -2px 2px #FFFFFF;
+        -webkit-box-shadow:  
+                                5px 5px 10px #DDDDDD,
+                               -5px -5px 10px #FFFFFF,
+                      inset 2px 2px 2px #DDDDDD,
+                      inset -2px -2px 2px #FFFFFF;
+        box-shadow:  
+                                5px 5px 10px #DDDDDD,
+                               -5px -5px 10px #FFFFFF,
+                      inset 2px 2px 2px #DDDDDD,
+                      inset -2px -2px 2px #FFFFFF;
+
+        &::placeholder {
+            text-shadow: 1px 1px 1px #DDDDDD, -1px -1px 1px #FFFFFF;
+        }
+
+        &::-moz-placeholder {
+            text-shadow: 1px 1px 1px #DDDDDD, -1px -1px 1px #FFFFFF;
+        }
+
+        &:-ms-input-placeholder {
+            text-shadow: 1px 1px 1px #DDDDDD, -1px -1px 1px #FFFFFF;
+        }
+
+        &::-ms-input-placeholder {
+            text-shadow: 1px 1px 1px #DDDDDD, -1px -1px 1px #FFFFFF;
+        }
+
+        &::-o-placeholder {
+            text-shadow: 1px 1px 1px #DDDDDD, -1px -1px 1px #FFFFFF;
+        }
+
+        &::-webkit-input-placeholder {
+            text-shadow: 1px 1px 1px #DDDDDD, -1px -1px 1px #FFFFFF;
+        }
+    }
+
+    .input--block {
+        margin-bottom: 1em;
+    }
+
+    .button {
+        border-radius: 0.6em;
+        background: #1D87F1;
+    }
+}
+
+@media ( prefers-color-scheme:dark ) {
+    #login {
+        background-color: rgba( $bg-dark, 1 );
+    
+        h1 {
+            font-weight: 100;
+            color: rgba( $color-dark, 0.8 );
+        }
+    
+        .input {
+            background-color: rgba( $bg-dark, 1 );
+            color: rgba( $color-dark, 0.8 );
+            border-radius: 0.6em;
+            -moz-box-shadow:  
+                                    5px 5px 10px #0c0d0e,
+                                   -5px -5px 10px #30333a,
+                          inset 2px 2px 2px #0c0d0e,
+                          inset -2px -2px 2px #30333a;
+            -ms-box-shadow:  
+                                    5px 5px 10px #0c0d0e,
+                                   -5px -5px 10px #30333a,
+                          inset 2px 2px 2px #0c0d0e,
+                          inset -2px -2px 2px #30333a;
+            -o-box-shadow:  
+                                    5px 5px 10px #0c0d0e,
+                                   -5px -5px 10px #30333a,
+                          inset 2px 2px 2px #0c0d0e,
+                          inset -2px -2px 2px #30333a;
+            -webkit-box-shadow:  
+                                    5px 5px 10px #0c0d0e,
+                                   -5px -5px 10px #30333a,
+                          inset 2px 2px 2px #0c0d0e,
+                          inset -2px -2px 2px #30333a;
+            box-shadow:  
+                                    5px 5px 10px #0c0d0e,
+                                   -5px -5px 10px #30333a,
+                          inset 2px 2px 2px #0c0d0e,
+                          inset -2px -2px 2px #30333a;
+
+            &::placeholder {
+                text-shadow: 1px 1px 1px #30333a, -1px -1px 1px #0c0d0e;
+            }
+
+            &::-moz-placeholder {
+                text-shadow: 1px 1px 1px #30333a, -1px -1px 1px #0c0d0e;
+            }
+
+            &:-ms-input-placeholder {
+                text-shadow: 1px 1px 1px #30333a, -1px -1px 1px #0c0d0e;
+            }
+
+            &::-ms-input-placeholder {
+                text-shadow: 1px 1px 1px #30333a, -1px -1px 1px #0c0d0e;
+            }
+
+            &::-o-placeholder {
+                text-shadow: 1px 1px 1px #30333a, -1px -1px 1px #0c0d0e;
+            }
+    
+            &::-webkit-input-placeholder {
+                text-shadow: 1px 1px 1px #30333a, -1px -1px 1px #0c0d0e;
+            }
+        }
+    
+        .button {
+            border-radius: 0.6em;
+            background: #1D87F1;
+        }
+    }
+}
+
+@media ( max-width: 736px ) {
+    #login .input:focus ~ .button {
+        margin-bottom: 100%;
+    }
+}

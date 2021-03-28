@@ -1,0 +1,22 @@
+.shell {
+    background: rgba( $bg-light, 0.8 );
+    color: rgba( $color-light, 0.9 );
+}
+
+@media ( prefers-color-scheme:dark ) {
+    .shell {
+        background-color: rgba( $bg-dark, 0.8 );
+        color: rgba( $color-dark, 0.9 );
+    }
+}
+
+@supports ( backdrop-filter: blur( 10px ) ) or ( -webkit-backdrop-filter: blur( 10px ) ) or ( -moz-backdrop-filter: blur( 10px ) ) or ( -ms-backdrop-filter: blur( 10px ) ) or ( -o-backdrop-filter: blur( 10px ) ) {
+    .shell {
+        background: rgba( $color-light, 0 );
+        -moz-backdrop-filter: blur( 10px );
+        -ms-backdrop-filter: blur( 10px );
+        -o-backdrop-filter: blur( 10px );
+        -webkit-backdrop-filter: blur( 10px );
+        backdrop-filter: blur( 10px );
+    }
+}

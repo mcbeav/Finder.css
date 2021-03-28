@@ -1,0 +1,200 @@
+header {
+    background-color: rgba( $bg-light, 0.8 );
+    -moz-box-shadow: $header-shadow;
+    -ms-box-shadow: $header-shadow;
+    -o-box-shadow: $header-shadow;
+    -webkit-box-shadow: $header-shadow;
+    box-shadow: $header-shadow;
+
+    .material-icons {
+        color: $color-mid;
+    }
+
+    #search {
+
+        #input {
+            background-color: rgba( 245, 245, 245, 0.8 );
+            border: 1px solid rgba( 243, 243, 243, 0.9 );
+            border-radius: 0.8em;
+        }
+
+        &.active {
+
+            #input {
+                border-bottom: none;
+            }
+
+            #result {
+                min-height: 60vh;
+                background-color: $bg-light;
+
+                > div > :first-child {
+                    display: none;
+                }
+            }
+
+            .boxes {
+                background: transparent;
+                border: none;
+                box-shadow: none;
+
+                h3 {
+                    display: none;
+                }
+
+                &>div>div {
+                    border-radius: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 736px ) {
+    header{
+
+        #file-selection {
+            border-radius: 1em;
+
+            .action {
+                border-radius: 0.7em;
+            }
+        }
+
+        #dropdown {
+            top: 4em;
+            border-radius: 1em;
+            background-color: rgba( $bg-light, 0.6 );
+
+            .action {
+                text-transform: capitalize;
+                padding: 0 1em 0 1em;
+        
+                &:first-child {
+                    border-top-left-radius: 1em;
+                    border-top-right-radius: 1em;
+                }
+        
+                &:last-child {
+                    border-bottom-left-radius: 1em;
+                    border-bottom-right-radius: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media ( prefers-color-scheme:dark ) {
+    header {
+        background-color: rgba( $bg-dark, 0.8 );
+        -moz-box-shadow: $header-shadow;
+        -ms-box-shadow: $header-shadow;
+        -o-box-shadow: $header-shadow;
+        -webkit-box-shadow: $header-shadow;
+        box-shadow: $header-shadow;
+        
+        #search {
+
+            #input {
+                background-color: rgba( $bg-dark, 0.6 );
+                color: rgba( $color-light, 0.9 );
+                border: 1px solid rgba( $bg-light, 0.1 );
+
+                input {
+
+                    &::-moz-placeholder,
+                    &::-ms-placeholder,
+                    &:-ms-input-placeholder,
+                    &::-o-placeholder,
+                    &::-webkit-input-placeholder,
+                    &::placeholder {
+                        color: rgba( $color-dark, 0.6 );
+                    }
+                }
+            }
+
+            &.active {
+
+                #input {
+                    background-color: $bg-dark;
+                    color: rgba( $color-dark, 0.9 );
+                }
+
+                input {
+                    color: rgba( $color-dark, 0.9 );
+                }
+
+                i {
+                    color: rgba( $color-dark, 0.9 );
+                }
+
+                #result {
+                    background-color: $bg-dark;
+                    color: rgba( $color-dark, 0.9 );
+                }
+
+                .boxes {
+
+                    h3 {
+                        color: rgba( $color-dark, 0.9 );
+                    }
+
+                    > div > div {
+                        background-color: rgba( $bg-light, 0.2 );
+                        color: rgba( $color-light, 0.9 );
+                    }
+
+                    i {
+                        color: rgba( $color-light, 0.6 ) !important;
+                    }
+                }
+            }
+        }
+    }
+
+    #result {
+        background-color: rgba( $bg-dark, 0.9 );
+        color: rgba( $color-dark, 0.9 );
+    }
+}
+
+@media ( prefers-color-scheme:dark ) and ( max-width: 736px ) {
+    header {
+
+        #file-selection {
+            background: $bg-dark;
+            box-shadow: 0 0.5px 0.5px -6px rgba( 48 ,51, 58, 0.035 ), 
+                                0 1.3px 1.3px -6px rgba( 48 ,51, 58, 0.05 ), 
+                                0 3px 3px -6px rgba( 48 ,51, 58, 0.065 ),
+                                0 10px 10px -6px rgba( 48 ,51, 58, 0.1 );
+
+            &>span {
+                color: rgba( $color-dark, 0.9 );
+            }
+        }
+
+        #dropdown {
+            background-color: rgba( $bg-dark, 1 );
+            border: 1px solid rgba( $bg-light, 0.1 );
+            box-shadow: 0 0.5px 0.5px -6px rgba( 48 ,51, 58, 0.035 ), 
+                                0 1.3px 1.3px -6px rgba( 48 ,51, 58, 0.05 ), 
+                                0 3px 3px -6px rgba( 48 ,51, 58, 0.065 ),
+                                0 10px 10px -6px rgba( 48 ,51, 58, 0.1 );
+    
+            .action span:not( .counter ) {
+                color: rgba( $color-dark, 0.9 );
+            }
+        }
+    }
+}
+
+@supports ( backdrop-filter: blur( 10px ) ) or ( -webkit-backdrop-filter: blur( 10px ) ) or ( -moz-backdrop-filter: blur( 10px ) ) or ( -ms-backdrop-filter: blur( 10px ) ) or ( -o-backdrop-filter: blur( 10px ) ) {
+    header {
+        background-color: rgba( $bg-light, 0 );
+        -moz-backdrop-filter: blur( 10px );
+        -ms-backdrop-filter: blur( 10px );
+        -o-backdrop-filter: blur( 10px );
+        -webkit-backdrop-filter: blur( 10px );
+        backdrop-filter: blur( 10px );
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "file-browser",
+  "version": "1.0.0",
+  "description": "Custom Branding, Icons & CSS, For The Files Container Running The file-browser Docker Image",
+  "main": "main.scss",
+  "scripts": {
+    "clean": "rm ./css/custom.css",
+    "build": "node-sass ./sass/main.scss ./css/custom.css",
+    "watch": "node-sass -rw ./sass/main.scss ./css/custom.css"
+  },
+  "keywords": [
+    "docker",
+    "css"
+  ],
+  "author": "hello@mcbeav.me",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

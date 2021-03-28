@@ -1,0 +1,97 @@
+.action {
+    border-radius: 0.7em;
+
+    .counter {
+        border-radius: 0.4em;
+        border: none;
+        line-height: 1.5em;
+    }
+}
+
+.overlay {
+    background-color: rgba( $bg-light, 0.8);
+}
+
+.card {
+    background-color: rgba( $bg-light, 0.9 );
+    border-radius: 12px;
+    -moz-box-shadow: $card-shadow;
+    -ms-box-shadow: $card-shadow;
+    -o-box-shadow: $card-shadow;
+    -webkit-box-shadow: $card-shadow;
+    box-shadow: $card-shadow;
+
+    .card-action.full .action {
+        border-radius: 1em;
+    }
+
+    .button {
+        border-radius: 0.6em;
+    }
+}
+
+.dashboard {
+
+    #nav {
+        color: rgba( $color-light, 0.9 );
+    }
+}
+
+@media ( prefers-color-scheme:dark ) {
+    .action {
+        color: rgba( $color-dark, 0.9 );
+    }
+
+    .action:hover {
+        background-color: rgba( $bg-light, 0.1 );
+    }
+
+    .overlay {
+        background-color: rgba( $bg-dark, 0.8);
+    }
+
+    .card {
+        background-color: $bg-dark;
+
+        h3 {
+            color: rgba( $color-dark, 0.9 );
+        }
+    }
+
+    .button--flat:hover {
+        background: rgba( $bg-light, 0.1 );
+    }
+
+    .collapsible {
+
+        &>label {
+
+            & * {
+                color: rgba( $color-dark, 0.9 );
+            }
+        }
+    }
+
+    .dashboard {
+
+        #nav {
+            color: rgba( $color-dark, 0.9 );
+        }
+    }
+
+    #loading {
+        background: $bg-dark;
+        color: rgba( $color-dark, 0.9 );
+    }
+}
+
+@supports ( backdrop-filter: blur( 10px ) ) or ( -webkit-backdrop-filter: blur( 10px ) ) or ( -moz-backdrop-filter: blur( 10px ) ) or ( -ms-backdrop-filter: blur( 10px ) ) or ( -o-backdrop-filter: blur( 10px ) ) {
+    .overlay {
+        background-color: rgba( $bg-light, 0 );
+        -moz-backdrop-filter: blur( 10px );
+        -ms-backdrop-filter: blur( 10px );
+        -o-backdrop-filter: blur( 10px );
+        -webkit-backdrop-filter: blur( 10px );
+        backdrop-filter: blur( 10px );
+    }
+}

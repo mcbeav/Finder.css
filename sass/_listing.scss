@@ -1,0 +1,191 @@
+main {
+
+    #listing {
+
+        .material-icons {
+            color: #79D3FB;
+        }
+
+        &.mosaic {
+            box-sizing: border-box;
+            background-color: $bg-light;
+            padding-top: 2em;
+            padding-left: 2em;
+            border-top-left-radius: 2em;
+            margin: 0;
+
+            h2 {
+                margin: 0 0 0.5em 0.5em;
+            }
+
+            .item {
+                width: 8em;
+                flex-wrap: wrap;
+                text-align: center;
+                padding: 0;
+                padding-bottom: 1em;
+                color: rgba( $color-light, 0.9 );
+                border-radius: 0.8em;
+                -moz-box-shadow: none;
+                -ms-box-shadow: none;
+                -o-box-shadow: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                cursor: default;
+        
+                &:hover {
+                    -moz-box-shadow: none !important;
+                    -ms-box-shadow: none !important;
+                    -o-box-shadow: none !important;
+                    -webkit-box-shadow: none !important;
+                    box-shadow: none !important;
+                }
+        
+                &:active {
+                    -moz-box-shadow: none !important;
+                    -ms-box-shadow: none !important;
+                    -o-box-shadow: none !important;
+                    -webkit-box-shadow: none !important;
+                    box-shadow: none !important;
+                }
+        
+                i {
+                    margin-right: 0;
+                    font-size: 6em;
+                }
+        
+                img {
+                    margin-right: 0;
+                }
+        
+                div {
+        
+                    &:first-of-type {
+                        width: 100%;
+                    }
+        
+                    &:last-of-type {
+                        width: 100%;
+                    }
+                }
+        
+                .name {
+                    font-size: 0.8em;
+                }
+        
+                .modified {
+                    font-size: 0.6em;
+                    color: $color-mid;
+                }
+        
+                .size {
+                    font-size: 0.6em;
+                    color: $color-mid;
+                }
+            }
+        }
+
+        &.list {
+
+            .item {
+                border: none;
+                background-color: $bg-light;
+                padding: 0.5em;
+                padding-left: 1em;
+
+                &:nth-child( even ) {
+                    background-color: #FAFAFA;
+                }
+
+                &.header {
+                    background: #FAFAFA;
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: 736px ) {
+    main #listing.mosaic {
+        border-radius: 0;
+        padding: 0 0 5em 0;
+
+        .item {
+            width: calc( 33% - 1em );
+
+            i {
+                font-size: 4em;
+            }
+        }
+    }
+
+    #breadcrumbs {
+        padding-left: 2em;
+    }
+
+    h2 {
+        margin-left: 2em;
+    }
+}
+
+@media ( min-width: 736px ) {
+    main {
+
+        #listing {
+
+            &.list {
+
+                .item {
+                    padding: 0;
+                    padding-left: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media ( min-width: 1024px ) {
+    main #listing.mosaic {
+        padding-right: 20%;
+    }
+}
+
+@media ( prefers-color-scheme:dark ) {
+    main {
+
+        #listing {
+
+            &.mosaic {
+                background-color: rgba( $bg-dark, 1 );
+
+                h2 {
+                    color: rgba( $color-dark, 0.9 );
+                }
+
+                .item {
+                    background-color: rgba( $bg-dark, 1 );
+                    color: rgba( $color-dark, 0.9 );
+                }
+            }
+
+            &.list {
+
+                .item {
+                    background-color: #2B2C2D;
+    
+                    &:nth-child( even ) {
+                        background-color: rgba( $bg-dark, 1 );
+                    }
+    
+                    &.header {
+                        background: rgba( $bg-dark, 1 );
+                    }
+
+                    div {
+                        color: rgba( $color-dark, 0.9 );
+                    }
+                }
+            }
+        }
+    }
+}

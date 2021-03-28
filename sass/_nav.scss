@@ -1,0 +1,113 @@
+nav {
+    text-transform: capitalize;
+
+    &> {
+        border-top: none;
+    }
+
+    &>div {
+        border-top: none;
+    }
+
+    .action {
+        text-transform: capitalize;
+    }
+
+    .credits {
+        display: none;
+    }
+
+    .material-icons {
+        color: #5B5858;
+    }
+}
+
+@media ( min-width: 736px ) {
+    nav {
+        top: 12em;
+        width: 19em;
+
+        .action {
+            padding: 0;
+            padding-left: 0.5em;
+            color: rgba( $color-light, 0.4 );
+
+            i {
+                padding: 0.1em 0.2em 0.1em 0.4em;
+            }
+        }
+    }
+}
+
+@media ( max-width: 1100px ) {
+    nav {
+        width: 13em;
+    }
+}
+
+@media ( max-width: 736px ) {
+    nav {
+        padding-top: 8em;
+        background: rgba( 245, 245, 245, 0.8 );
+        -moz-box-shadow: 0.5px 0 0.5px -6px rgba(0, 0, 0, 0.035), 
+                            1.3px 0 1.3px -6px rgba(0, 0, 0, 0.05), 
+                            3px 0 3px -6px rgba(0, 0, 0, 0.065),
+                             10px 0 10px -6px rgba(0, 0, 0, 0.1);
+        -ms-box-shadow: 0.5px 0 0.5px -6px rgba(0, 0, 0, 0.035), 
+                            1.3px 0 1.3px -6px rgba(0, 0, 0, 0.05), 
+                            3px 0 3px -6px rgba(0, 0, 0, 0.065),
+                             10px 0 10px -6px rgba(0, 0, 0, 0.1);
+        -o-box-shadow: 0.5px 0 0.5px -6px rgba(0, 0, 0, 0.035), 
+                            1.3px 0 1.3px -6px rgba(0, 0, 0, 0.05), 
+                            3px 0 3px -6px rgba(0, 0, 0, 0.065),
+                             10px 0 10px -6px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 0.5px 0 0.5px -6px rgba(0, 0, 0, 0.035), 
+                            1.3px 0 1.3px -6px rgba(0, 0, 0, 0.05), 
+                            3px 0 3px -6px rgba(0, 0, 0, 0.065),
+                             10px 0 10px -6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0.5px 0 0.5px -6px rgba(0, 0, 0, 0.035), 
+                            1.3px 0 1.3px -6px rgba(0, 0, 0, 0.05), 
+                            3px 0 3px -6px rgba(0, 0, 0, 0.065),
+                             10px 0 10px -6px rgba(0, 0, 0, 0.1);
+
+        .action {
+            padding: 0;
+            padding-left: 0.5em;
+        }
+    }
+}
+
+@media ( prefers-color-scheme:dark ) and ( max-width: 736px ) {
+    nav {
+        background: rgba( 30, 32, 36, 0.9 );
+        -moz-box-shadow: 0.5px 0 0.5px -6px rgba( 48, 51, 58, 0.035 ), 
+                            1.3px 0 1.3px -6px rgba( 48, 51, 58, 0.05 ), 
+                            3px 0 3px -6px rgba( 48, 51, 58, 0.065 ),
+                             10px 0 10px -6px rgba( 48, 51, 58, 0.1 );
+        -ms-box-shadow: 0.5px 0 0.5px -6px rgba( 48, 51, 58, 0.035 ), 
+                            1.3px 0 1.3px -6px rgba( 48, 51, 58, 0.05 ), 
+                            3px 0 3px -6px rgba( 48, 51, 58, 0.065 ),
+                             10px 0 10px -6px rgba( 48, 51, 58, 0.1 );
+        -o-box-shadow: 0.5px 0 0.5px -6px rgba( 48, 51, 58, 0.035 ), 
+                            1.3px 0 1.3px -6px rgba( 48, 51, 58, 0.05 ), 
+                            3px 0 3px -6px rgba( 48, 51, 58, 0.065 ),
+                             10px 0 10px -6px rgba( 48, 51, 58, 0.1 );
+        -webkit-box-shadow: 0.5px 0 0.5px -6px rgba( 48, 51, 58, 0.035 ), 
+                            1.3px 0 1.3px -6px rgba( 48, 51, 58, 0.05 ), 
+                            3px 0 3px -6px rgba( 48, 51, 58, 0.065 ),
+                             10px 0 10px -6px rgba( 48, 51, 58, 0.1 );
+        box-shadow: 0.5px 0 0.5px -6px rgba( 48, 51, 58, 0.035 ), 
+                            1.3px 0 1.3px -6px rgba( 48, 51, 58, 0.05 ), 
+                            3px 0 3px -6px rgba( 48, 51, 58, 0.065 ),
+                             10px 0 10px -6px rgba( 48, 51, 58, 0.1 );
+    }
+}
+
+@media ( prefers-color-scheme:dark ) {
+    nav {
+
+        .action {
+            color: rgba( $color-dark, 0.6 );
+        }
+    }
+}
