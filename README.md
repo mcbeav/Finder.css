@@ -49,7 +49,11 @@ Compile the main.scss file using any sass compiler & name the output file custom
 	
   - Compiles the scss files & outputs a minified & compact custom.css file to the css folder.
 
-## Version
+## Versions
+- 1.0.1 - Bug Fixes
+	- Fixed Background Showing White If File List Was Not Long Enough While In Dark Mode
+	- Fixed Search Input Placeholder Color Displaying As Black In Firefox In Dark Mode
+	- Fixed Text Selection Styles Not Rendering In Firefox
 - 1.0.0 - Initial Release
 
 ## To Do
@@ -58,6 +62,7 @@ Compile the main.scss file using any sass compiler & name the output file custom
 - [ ] Polyfill Backdrop Blur For Mozilla
 - [ ] Change Side Bar From Menu Items To Specific Folders Like Finder
 - [ ] Rework / Restyle The Breadcrumb Links
+- [ ] Fix Text Selection Styles Not Rendering In Chrome Due To A Browser Bug
 
 ## Author
 - mcbeav - 422939+mcbeav@users.noreply.github.com
