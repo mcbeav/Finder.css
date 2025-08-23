@@ -3,10 +3,10 @@ Custom styles for [File-Browser](http://filebrowser.org) V 2.0. The stylesheet a
 
 ## Screenshots
 - ### Desktop
-<img src="https://i.imgur.com/0v7u3Eh.png" alt="Finder Custom.css Style On Desktop">
+<img src="https://raw.githubusercontent.com/mcbeav/readme.photos/refs/heads/main/Finder/desktop.png" alt="Finder Custom.css Style On Desktop">
 
 - ### Mobile
-<img src="https://i.imgur.com/olnx1Xh.png" alt="Finder Custom.css Style On Mobile">
+<img src="https://raw.githubusercontent.com/mcbeav/readme.photos/refs/heads/main/Finder/mobile.png" alt="Finder Custom.css Style On Mobile">
 
 ## Installation
 Instructions found On 
